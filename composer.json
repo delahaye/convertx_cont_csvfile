@@ -1,0 +1,36 @@
+{
+    "name": "delahaye/convertx_cont_csvfile",
+    "description":"CSV for ConvertX: provides CSV import routines.",
+    "keywords":["contao", "import", "importer","csv"],
+    "type": "contao-module",
+    "homepage":"http://convertx.de",
+    "license":"LGPL-3.0+",
+    "authors":[
+        {
+            "name":"Christian de la Haye",
+            "email":"service@delahaye.de",
+            "homepage":"http://www.delahaye.de",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "issues":"https://github.com/delahaye/convertx_cont_csvfile/issues"
+    },
+    "require": {
+        "contao/core": ">=3.4,<4-dev",
+        "delahaye/convertx":"~1"
+    },
+    "conflict": {
+        "contao/core": "3.0.*"
+    },
+    "replace": {
+        "contao-legacy/convertx_cont_csvfile": "self.version"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/convertx_cont_csvfile"
+            }
+        }
+    }
+}
